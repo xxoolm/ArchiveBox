@@ -1349,8 +1349,6 @@ For low hanging fruit / easy first tickets, see: <a href="https://github.com/Arc
 
 **Internal Architecture Diagrams:** https://github.com/ArchiveBox/ArchiveBox/wiki/ArchiveBox-Architecture-Diagrams
 
-<img width="100%" alt="architecture diagrams" src="https://github.com/user-attachments/assets/bdf782d5-2c8f-4168-845d-6794ff5cbfec">
-
 
 ### Setup the dev environment
 
