@@ -30,7 +30,7 @@ body:
       description: Please include the exact steps you took to trigger the issue.
       render: markdown
       placeholder: |
-        1. Started ArchiveBox by running: `docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox:0.7.3` in iTerm2
+        1. Started ArchiveBox by running: `docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox` in iTerm2
         2. Went to the https://127.0.0.1:8000/add/ page in Google Chrome
         3. Typed 'https://example.com/xyz' into the 'Add URL' input field
         4. Clicked the 'Add+' button
