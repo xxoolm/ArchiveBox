@@ -93,7 +93,7 @@ body:
         - apt
         - brew
         - nix
-        - Docker (or Podman/LXC/K8s/TrueNAS/Proxmox/YunoHost/etc.)
+        - Docker (or Podman/LXC/K8s/TrueNAS/Proxmox/etc)
         - Other
 
   - type: dropdown
@@ -118,13 +118,13 @@ body:
       label: What type of drive are you using to store your ArchiveBox data?
       description: Are you using a [remote filesystem](https://github.com/ArchiveBox/ArchiveBox/wiki/Setting-Up-Storage#supported-remote-filesystems) or FUSE mount for `data/` or `data/archive` (e.g. NFS/SMB/CIFS/etc. or FUSE/RClone/S3/B2/OneDrive/etc.)?
       options:
-        - label: some of "`data/` is on a local SSD or NVMe drive"
+        - label: "some of `data/` is on a local SSD or NVMe drive"
           required: false
-        - label: some of "`data/` is on a spinning hard drive or external USB drive"
+        - label: "some of `data/` is on a spinning hard drive or external USB drive"
           required: false
-        - label: some of "`data/` is on a network mount (e.g. NFS/SMB/Ceph/GlusterFS/etc.)"
+        - label: "some of `data/` is on a network mount (e.g. NFS/SMB/Ceph/GlusterFS/etc.)"
           required: false
-        - label: some of "`data/` is on a FUSE mount (e.g. SSHFS/RClone/S3/B2/OneDrive, etc.)"
+        - label: "some of `data/` is on a FUSE mount (e.g. SSHFS/RClone/S3/B2/OneDrive, etc.)"
           required: false
   
 
