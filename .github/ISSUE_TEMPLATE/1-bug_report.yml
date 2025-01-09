@@ -124,7 +124,7 @@ body:
           required: false
         - label: "some of `data/` is on a network mount (e.g. NFS/SMB/Ceph/GlusterFS/etc.)"
           required: false
-        - label: "some of `data/` is on a FUSE mount (e.g. SSHFS/RClone/S3/B2/OneDrive, etc.)"
+        - label: "some of `data/` is on a FUSE mount (e.g. SSHFS/RClone/S3/B2/Google Drive/Dropbox/etc.)"
           required: false
   
 
