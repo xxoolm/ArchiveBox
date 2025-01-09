@@ -24,7 +24,7 @@ body:
     attributes:
       label: "What is the problem that your feature request solves?"
       description: |
-        Describe the problem that your feature request solves, feel free to include any screenshots or examples.
+        Describe the problem or need that your feature request solves, feel free to include any screenshots or examples.
       placeholder: |
         e.g. I need to be able to archive spanish and french subtitle files from a particular movie site https://example.com/somevideos that's going down soon.
     validations:
@@ -35,7 +35,7 @@ body:
     attributes:
       label: "What is your proposed solution?"
       description: |
-        Describe the ideal specific solution you'd want, and whether it fits into any broader scope of changes.
+        Describe the ideal specific solution you'd want, *and whether it fits into any broader scope of changes*.
       placeholder: |
         e.g. I specifically need a new archive method to look for multilingual subtitle files related to pages.  
         The bigger picture solution is the ability for custom user scripts to be run in a puppeteer context during archiving.
@@ -47,7 +47,7 @@ body:
     attributes:
       label: "What hacks or alternative solutions have you tried to solve the problem?"
       description: |
-        A clear and concise description of any alternative solutions, workarounds, or other software you've considered using to fix the problem.
+        A description of any alternative approaches, workarounds, or other solutions you've considered to fix the problem.
       placeholder: |
         e.g. I wait for archivebox to finish archiving the page, then I manually run `yt-dlp --subs <URL>` inside 
         the `data/archive/<timestamp>/` directory to download the subtitle files and add them to the snapshot folder.
