@@ -94,7 +94,7 @@ body:
           required: false
         - label: "It would be nice to have eventually"
           required: false
-        - label: "I'm willing to [work on a PR](https://github.com/ArchiveBox/ArchiveBox#archivebox-development) to develop this myself"
+        - label: "I'm willing to [start a PR](https://github.com/ArchiveBox/ArchiveBox#archivebox-development) to develop this myself"
           required: false
         - label: "I have [donated money](https://github.com/ArchiveBox/ArchiveBox/wiki/Donations) to go towards fixing this issue"
           required: false
