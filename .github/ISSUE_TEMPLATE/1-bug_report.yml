@@ -27,7 +27,7 @@ body:
     id: steps_to_reproduce
     attributes:
       label: Steps to reproduce
-      description: Please include the exact steps you took to trigger the issue.
+      description: Please include the exact steps you took to trigger the issue (including any shell commands run, URLs visited, buttons clicked, etc.).
       render: markdown
       placeholder: |
         1. Started ArchiveBox by running: `docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox` in iTerm2
