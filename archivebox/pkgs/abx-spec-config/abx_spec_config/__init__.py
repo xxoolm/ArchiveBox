@@ -33,7 +33,7 @@ class ConfigPluginSpec:
     @abx.hookspec
     @abx.hookimpl
     def get_CONFIG() -> dict[abx.PluginId, 'BaseConfigSet | ConstantsDict']:
-        from archivebox import CONSTANTS
+        from archivebox.config import CONSTANTS
         """Get the config for a single plugin -> {plugin_id: PluginConfigSet()}"""
         return {
             'CONSTANTS': CONSTANTS,

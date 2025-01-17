@@ -15,11 +15,10 @@ from pydantic import Field
 
 from abx_spec_config.base_configset import BaseConfigSet
 
-SOURCES_DIR = abx.pm.hook.get_CONFIG().SOURCES_DIR
-
+from archivebox.config import CONSTANTS
 
 class ReadwiseConfig(BaseConfigSet):
-    READWISE_DB_PATH: Path                  = Field(default=SOURCES_DIR / "readwise_reader_api.db")
+    READWISE_DB_PATH: Path                  = Field(default=CONSTANTS.SOURCES_DIR / "readwise_reader_api.db")
     READWISE_READER_TOKENS: Dict[str, str]  = Field(default=lambda: {})   # {<username>: <access_token>, ...}
 
 
