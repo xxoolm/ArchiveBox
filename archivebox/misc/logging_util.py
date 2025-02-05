@@ -155,9 +155,10 @@ class TimedProgress:
                 time.sleep(0.1)
                 # sometimes the timer doesn't terminate properly, then blocks at the join until
                 # the full time has elapsed. sending a kill tries to avoid that.
-                if self.p.is_alive():
+                try:
                     self.p.kill() 
-                self.p.join()
+                except Exception:
+                    pass
 
 
                 # clear whole terminal line
