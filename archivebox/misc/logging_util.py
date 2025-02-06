@@ -152,7 +152,13 @@ class TimedProgress:
                 except BaseException:                                           # lgtm [py/catch-base-exception]
                     pass
                 self.p.terminate()
-                self.p.join()
+                time.sleep(0.1)
+                # sometimes the timer doesn't terminate properly, then blocks at the join until
+                # the full time has elapsed. sending a kill tries to avoid that.
+                try:
+                    self.p.kill() 
+                except Exception:
+                    pass
 
 
                 # clear whole terminal line
