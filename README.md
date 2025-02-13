@@ -22,7 +22,7 @@ curl -fsSL 'https://get.archivebox.io' | bash    # (or see pip/brew/Docker instr
 
 **ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.**
 
-We aim to make your data immediately useful, and stored in common formats that been around for decades. As output we save standard HTML, PNG, PDF, TXT, JSON, WARC, SQLite, all guaranteed to be readable for decades to come. ArchiveBox also has a CLI, REST API, and webhooks so you can set up integrations with other services.
+We aim to make your data immediately useful, and kept in formats that other programs can read directly. As output, we save standard HTML, PNG, PDF, TXT, JSON, WARC, SQLite, all guaranteed to be readable for decades to come. ArchiveBox also has a CLI, REST API, and webhooks so you can set up integrations with other services.
 
 Without active preservation effort, everything on the internet eventually disappears or degrades.
 
@@ -31,7 +31,7 @@ Without active preservation effort, everything on the internet eventually disapp
 
 > ➡️ Get ArchiveBox with `pip install archivebox` on [Linux](#quickstart)/[macOS](#quickstart), or via **[Docker](#quickstart)** ⭐️ on any OS.  
 
-*Once installed, it can be used as a [CLI tool](#usage), [self-hosted Web App](https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive), [Python library](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#python-shell-usage), or [one-off command](#static-archive-exporting).*
+*Once installed, you can interact with it through the: [Browser Extension](https://github.com/ArchiveBox/archivebox-browser-extension), [CLI](#usage), [self-hosted web interface](https://github.com/ArchiveBox/ArchiveBox/wiki/Publishing-Your-Archive), [Python API](https://github.com/ArchiveBox/ArchiveBox/wiki/Usage#python-shell-usage), or [filesystem](#static-archive-exporting).*
 
 <br/>
 <hr/>
@@ -154,7 +154,7 @@ ArchiveBox is free for everyone to self-host, but we also provide support, secur
 - **Governments:**
   `snapshoting public service sites`, `recordkeeping compliance`
 
-> ***[Contact us](https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102)** if your org wants help using ArchiveBox professionally.*  (we are also seeking [grant funding](https://github.com/ArchiveBox/ArchiveBox/issues/1126#issuecomment-1487431394))  
+> ***[Contact us](https://zulip.archivebox.io/#narrow/stream/167-enterprise/topic/welcome/near/1191102)** if your org wants help using ArchiveBox professionally.*  
 > We offer: setup & support, CAPTCHA/ratelimit unblocking, SSO, audit logging/chain-of-custody, and more  
 > *ArchiveBox is a 🏛️ 501(c)(3) [nonprofit FSP](https://hackclub.com/hcb/) and all our work supports open-source development.* 
 
