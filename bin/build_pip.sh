@@ -11,21 +11,15 @@ set -o pipefail
 IFS=$'\n'
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
-
-if [[ -f "$REPO_DIR/.venv/bin/activate" ]]; then
-    source "$REPO_DIR/.venv/bin/activate"
-else
-    echo "[!] Warning: No virtualenv presesnt in $REPO_DIR.venv"
-fi
 cd "$REPO_DIR"
 
-
-echo "[*] Cleaning up build dirs"
-cd "$REPO_DIR"
-rm -Rf build dist
+# Generate pdm.lock, requirements.txt, and package-lock.json
+bash ./bin/lock_pkgs.sh
+source .venv/bin/activate
 
 echo "[+] Building sdist, bdist_wheel, and egg_info"
-python3 setup.py \
-    sdist --dist-dir=./pip_dist \
-    bdist_wheel --dist-dir=./pip_dist \
-    egg_info --egg-base=./pip_dist
+rm -Rf build dist
+uv build
+
+echo
+echo "[√] Finished. Built package in dist/"

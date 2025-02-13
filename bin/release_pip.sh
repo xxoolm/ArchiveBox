@@ -11,17 +11,10 @@ set -o pipefail
 IFS=$'\n'
 
 REPO_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && cd .. && pwd )"
-VERSION="$(jq -r '.version' < "$REPO_DIR/package.json")"
 cd "$REPO_DIR"
 source "$REPO_DIR/.venv/bin/activate"
 
-
-# apt install python3 python3-all python3-dev
-# pip install '.[dev]'
-
-
-echo "[^] Uploading to test.pypi.org"
-python3 -m twine upload --repository testpypi pip_dist/archivebox-${VERSION}*.{whl,tar.gz}
-
-echo "[^] Uploading to pypi.org"
-python3 -m twine upload --repository pypi pip_dist/archivebox-${VERSION}*.{whl,tar.gz}
+echo "[^] Publishing to PyPI..."
+rm -Rf dist
+uv build
+uv publish
