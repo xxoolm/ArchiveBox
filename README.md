@@ -20,9 +20,11 @@ curl -fsSL 'https://get.archivebox.io' | bash    # (or see pip/brew/Docker instr
 <hr/>
 <br/>
 
-**ArchiveBox is a powerful, self-hosted internet archiving solution to collect, save, and view websites offline.**
+**ArchiveBox is a self-hosted app that lets you preserve content from websites in a variety of formats.**
 
-Without active preservation effort, everything on the internet eventually disappears or degrades. Archive.org does a great job as a centralized service, but saved URLs have to be public, and they can't save every type of content.
+We aim to make your data immediately useful, and stored in common formats that been around for decades. As output we save standard HTML, PNG, PDF, TXT, JSON, WARC, SQLite, all guaranteed to be readable for decades to come. ArchiveBox also has a CLI, REST API, and webhooks so you can set up integrations with other services.
+
+Without active preservation effort, everything on the internet eventually disappears or degrades.
 
 *ArchiveBox is an open source tool that lets organizations & individuals archive both public & private web content while retaining control over their data. It can be used to save copies of bookmarks, preserve evidence for legal cases, backup photos from FB/Insta/Flickr or media from YT/Soundcloud/etc., save research papers, and more...*
 <br/>
